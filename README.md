@@ -10,9 +10,9 @@ mini database engine written in C
 <h2>datatype supported</h2><br/> int , float , double ,char(supported for string upto 255 charecters only . specify only char to store string)<br/><br/>
 
 <h2>Todo</h2><br/>
-1 ) 'where' clause for select query.<br/>
-2 ) update , delete and drop command.<br/>
-3 ) indexing all the rows (indexing at present is done only to primary_key).<br/>
+<b>1. </b> 'where' clause for select query.<br/>
+<b>2. </b> update , delete and drop command.<br/>
+<b>3. </b> indexing all the rows (indexing at present is done only to primary_key).<br/>
 <br/><br/>
 
 ![screenshot 33](https://cloud.githubusercontent.com/assets/21128320/25394355/76dc9fea-29fb-11e7-9f52-68fa73d6210e.png)<br/><br/>

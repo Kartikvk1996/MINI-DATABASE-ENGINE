@@ -1,13 +1,13 @@
 # MINI-DATABASE-ENGINE (still under development)
 mini database engine written in C
 
-<h2>Supports query such as</h2> - <br/><b>select </b> Selects all the data from table<br/>
-<b>desc </b> Describes the table info<br/>
-<b>show </b> Shows all table info
-<b>create</b> Creates new table -- constraint is only primary_key is supported and write primary key as <b>'primary_key'</b>
-<b>insert</b> inserts value to the table<br/><br/>
+<h2>Supports query such as</h2>  <br/><b>1. select </b> Selects all the data from table<br/>
+<b>2. desc </b> Describes the table info<br/>
+<b>3. show </b> Shows all table info.<br/>
+<b>4. create</b> Creates new table -- constraint is only primary_key is supported and write primary key as <b>'primary_key'</b>.<br/>
+<b>5. insert</b> inserts value to the table<br/><br/>
 
-<h2>datatype supported</h2><br/> - int , float , double ,char(supported for string upto 255 charecters only . specify only char to store string)<br/><br/>
+<h2>datatype supported</h2><br/> int , float , double ,char(supported for string upto 255 charecters only . specify only char to store string)<br/><br/>
 
 <h2>Todo</h2><br/>
 1 ) 'where' clause for select query.<br/>

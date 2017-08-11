@@ -1,3 +1,4 @@
+// parse the select query
 void parse_select_query(char *query,struct metadata **table)
 {
     char *fields_to_select;

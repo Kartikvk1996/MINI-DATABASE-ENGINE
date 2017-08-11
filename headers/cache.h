@@ -1,4 +1,4 @@
-// global array
+// global array to cache data
 struct cache ch;
 
 void init_cache()

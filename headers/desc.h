@@ -1,3 +1,4 @@
+// describe the data
 void description(char *query,struct metadata **table)
 {
     strsep(&query," "); //skip desc command

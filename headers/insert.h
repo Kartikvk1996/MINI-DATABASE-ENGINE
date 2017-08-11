@@ -1,3 +1,4 @@
+// parse the insert query
 void parse_insert_query(char *query,struct metadata **table)
 {
     char *table_name=NULL;

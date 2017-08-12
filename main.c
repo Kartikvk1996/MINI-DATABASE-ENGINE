@@ -3,7 +3,7 @@
 #include<string.h>
 #include<malloc.h>
 #include<sys/time.h>
-
+#include<sys/file.h>
 
 #include"headers/define.h"
 #include"headers/structure.h"

@@ -20,6 +20,7 @@ void parse_select_query(char *query,struct metadata **table)
             char path[100]="tables/";
             strcat(path,table_name);
             FILE *fp=fopen(path,"r");
+            int lock=flock(fileno(fp),LOCK_EX); // exclusive locking the file
             if(fp==NULL)
             {
                 printf("Error in reading file\n");
@@ -77,6 +78,7 @@ void parse_select_query(char *query,struct metadata **table)
                 printf("\n");
             }
             printf("----------------------------------------------------------------------------------\n");
+            int unlock=flock(fileno(fp),LOCK_UN);
             fclose(fp);
             return;
         }

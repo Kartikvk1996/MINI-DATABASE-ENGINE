@@ -7,12 +7,12 @@ mini database engine written in C
 <b>4. create</b> Creates new table -- constraint is only primary_key is supported and write primary key as <b>'primary_key'</b>.<br/>
 <b>5. insert</b> inserts value to the table<br/><br/>
 
-<h2>datatype supported</h2><br/> int , float , double ,char(supported for string upto 255 charecters only . specify only char to store string)<br/><br/><p color="green">[3-8-17] added locking of file which is in use to prevent consistency.</p><br><br>
+<h2>datatype supported</h2><br/> int , float , double ,char(supported for string upto 255 charecters only . specify only char to store string)<br/><br/><p style="font-color:'green'">[3-8-17] added locking of file which is in use to prevent consistency.</p><br><br>
 
 <h2>Todo</h2><br/>
 <b>1. </b> 'where' clause for select query.<br/>
 <b>2. </b> update , delete and drop command.<br/>
-<b>3. </b> indexing all the rows (indexing at present is done only to primary_key).<br/>
+<b>3. </b> indexing on non-prime attributes (clustered indexing) (indexing at present is done only to primary_key).<br/>
 <br/><br/>
 
 ![screenshot 33](https://cloud.githubusercontent.com/assets/21128320/25394355/76dc9fea-29fb-11e7-9f52-68fa73d6210e.png)<br/><br/>

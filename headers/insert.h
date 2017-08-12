@@ -208,6 +208,7 @@ void parse_insert_query(char *query,struct metadata **table)
     char path[100]="tables/";
     strcat(path,table_name);
     FILE *fp=fopen(path,"a");
+    int lock=flock(fileno(fp),LOCK_EX); // lock a file
     if(fp==NULL)
     {
         printf("Error opening file to insert data\n");
@@ -215,6 +216,7 @@ void parse_insert_query(char *query,struct metadata **table)
     }
 
     fwrite(&user_data,sizeof(user_data),1,fp);
+    int unlock=flock(fileno(fp),LOCK_UN);   // unlock a file
     fclose(fp);
     printf("Data inserted successfully\n");
     return ;

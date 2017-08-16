@@ -7,7 +7,7 @@ mini database engine written in C
 <b>4. create</b> Creates new table -- constraint is only primary_key is supported and write primary key as <b>'primary_key'</b>.<br/>
 <b>5. insert</b> inserts value to the table<br/><br/>
 
-<h2>datatype supported</h2><br/> int , float , double ,char(supported for string upto 255 charecters only . specify only char to store string)<br/><br/><p style="color:green">[3-8-17] added locking of file which is in use, to maintain consistency.</p><br><br>
+<h2>datatype supported</h2><br/> int , float , double ,char(supported for string upto 255 charecters only . specify only char to store string)<br/><br/><p style="color:green">[12-5-17] Removed segmentation fault error on insertion of string. <br>[3-8-17] added locking of file which is in use, to maintain consistency.</p><br><br>
 
 <h2>Todo</h2><br/>
 <b>1. </b> 'where' clause for select query.<br/>
